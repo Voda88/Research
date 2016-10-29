@@ -1,8 +1,8 @@
 Al 383
 
-T_L: 589.732 C
-T_S: 535.247 C
-T_E: 535.246 C
+T_L: 593.75 C
+T_S: 539.076 C
+T_E: 530.076 C
 
 Qcr: 340 000 J/kg
 Qeut: 508497 J/kg
@@ -10,27 +10,35 @@ Qeut: 508497 J/kg
 CLF up, % 70
 CLF down, % 30
 
-Composition:
-Al: 82.95
-Si: 10.5
-Mg: 0.1
-Mn: 0.5
-Cu: 2.5
-Ni: 0.3
-zn: 3
-Sn: 0.150
+Composition,  D_S,           D_L,     Temperature,      source:
+Al: 84.0  
+Si: 10.14       ?         1.2*10^(-16)    900 C            1
+Fe: 0.995    7*10^(-17)   2.69*10^(-9)    500 C, 704 C    2,3
+Mn: 0.288
+Mg: 0.309
+Cu: 2.53
+Zn: 1.45
+Cr: 0.0661
+Ni: 0.0654
+Sn: 0.0173
+Pb: 0.0418
+Sr: <0.0001
+B: 0.0011
+Cd: <0.0001
+Others: 0.0291
 
-C_E: 14.754 %
-C_0:10.480 %
-C_SM: 2.256 %
+C_E: 14.5 %
+C_0: 10.127 %
+C_SM: 2.401 %
+C_S_0: 1.440 %
 
 m=(T_E-T_L)/(C_E-C_L)
 
-m= (535.246-589.732)/(14.754-10.553) = -12.37
+m= (530.076-593.75)/(14.5-10.127) = -14.56
 
-partition coefficient: kc0=1.5 k = 1.5/C0 = 0.1436
-                        k*C_E=C_SM k=C_SM/C_E= 0.1529
-                        AVERAGE: k= 0.15025
+partition coefficient:  k = C_S/C_L = 1.440/10.127 = 0.1422
+                        k=C_SM/C_E= 2.401/14.5 = 0.1656
+                        AVERAGE: k= 0.1539
 
 rho: 2485 kg/m^3
 
@@ -40,6 +48,14 @@ heat conduction: 96  W/m/C
 
 heat transfer coefficient=10 000 W/m^2/C
 
+(1) Determination of aluminum diffusion parameters in silicon
+O. Krausea  and H. Ryssel JOURNAL OF APPLIED PHYSICS VOLUME 91, NUMBER 9 1 MAY 2002
 
+(2) Dobatkin et al. 1995
+
+(3)Journal of Phase Equilibria and Diffusion
+June 2011, Volume 32, Issue 3, pp 226-234
+Nathan LeeJohn Cahoon
+Interdiffusion of Copper and Iron in Liquid Aluminum
 
 
